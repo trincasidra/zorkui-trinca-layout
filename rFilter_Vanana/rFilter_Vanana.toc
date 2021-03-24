@@ -1,0 +1,12 @@
+## Interface: 90005
+## Author: cocovanana
+## Title: rFilter_Vanana
+## Notes: Cocovanana's layout for rFilter
+## RequiredDeps: rLib, rFilter
+## OptionalDeps: rButtonTemplate, rButtonTemplate_Zork
+
+init.lua
+buff.lua
+debuff.lua
+cooldown.lua
+theme.lua

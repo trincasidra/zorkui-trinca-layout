@@ -1,0 +1,7 @@
+## Interface: 90005
+## Author: cocovanana
+## Title: rBuffFrame_Vanana
+## Notes: Cocovanana's buff frame layout for rBuffFrame
+## RequiredDeps: rLib, rBuffFrame
+
+layout.lua
