@@ -1,7 +1,0 @@
-## Interface: 90005
-## Author: cocovanana
-## Title: rButtonTemplate_Vanana
-## Notes: Cocovanana's button theme for rButtonTemplate
-## RequiredDeps: rLib, rButtonTemplate
-
-theme.lua

@@ -1,0 +1,7 @@
+## Interface: 90005
+## Author: trincasidra
+## Title: rBuffFrame_Trinca
+## Notes: Trincasidra's buff frame layout for rBuffFrame
+## RequiredDeps: rLib, rBuffFrame
+
+layout.lua

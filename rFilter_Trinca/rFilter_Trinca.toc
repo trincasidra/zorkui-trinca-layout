@@ -1,7 +1,7 @@
 ## Interface: 90005
-## Author: cocovanana
-## Title: rFilter_Vanana
-## Notes: Cocovanana's layout for rFilter
+## Author: trincasidra
+## Title: rFilter_Trinca
+## Notes: Trincasidra's layout for rFilter
 ## RequiredDeps: rLib, rFilter
 ## OptionalDeps: rButtonTemplate, rButtonTemplate_Zork
 

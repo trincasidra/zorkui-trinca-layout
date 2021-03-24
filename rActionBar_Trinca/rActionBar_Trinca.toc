@@ -1,0 +1,7 @@
+## Interface: 90005
+## Author: trincasidra
+## Title: rActionBar_Trinca
+## Notes: Trincasidra's bar layout for rActionBar
+## RequiredDeps: rActionBar
+
+layout.lua
