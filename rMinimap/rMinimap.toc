@@ -1,4 +1,4 @@
-## Interface: 90005
+## Interface: 80000
 ## Author: zork
 ## Title: rMinimap
 ## Notes: Zork's Minimap adjustments
