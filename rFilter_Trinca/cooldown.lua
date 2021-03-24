@@ -18,9 +18,10 @@ if L.C.playerClass == "PRIEST" then
   rFilter:CreateCooldown(214621,36,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 92, 0},"show",{1,1},true) --schism
   -- shield
   rFilter:CreateCooldown(194509,36,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 176, 0},"show",{1,1},true) --word: radiance
+
   rFilter:CreateCooldown(34433,24,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 8, -42},"show",{1,1},true) --shadowfiend/mindbender
   rFilter:CreateCooldown(32379,24,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 38, -42},"show",{1,1},true) --word: death
-  --
+  rFilter:CreateCooldown(47536,24,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 68, -42},"show",{1,1},true) --rapture
   --
   rFilter:CreateCooldown(204263,24,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 128, -42},"show",{1,1},true) --shining force
   rFilter:CreateCooldown(8122,24,{"TOPLEFT", oUF_SimplePlayer, "TOPRIGHT", 158, -42},"show",{1,1},true) --psychic scream

@@ -100,7 +100,7 @@ L.C.target = {
     spacing = 5,
     initialAnchor = "TOPLEFT",
     growthX = "RIGHT",
-    growthY = "UP",
+    growthY = "DOWN",
     disableCooldown = false,
   },
   debuffs = {
@@ -112,7 +112,7 @@ L.C.target = {
     spacing = 5,
     initialAnchor = "BOTTOMLEFT",
     growthX = "RIGHT",
-    growthY = "DOWN",
+    growthY = "UP",
     disableCooldown = false,
   },
 }
