@@ -44,6 +44,8 @@ cfg.backdrop = {
   tileSize = 16,
   edgeSize = 16,
   insets = {left=3, right=3, top=3, bottom=3},
+  backdropBorderColor = {0.1,0.1,0.1,0.6},
+  backdropColor = {0.08,0.08,0.1,0.92},
 }
 
 --pos can be either a point table or a anchor string

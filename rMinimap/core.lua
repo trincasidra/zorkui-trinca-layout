@@ -19,12 +19,16 @@ L.addonShortcut   = "rmm"
 
 local cfg = {
   scale = 1,
-  point = { "TOPRIGHT", 0, 0},
+  point = { "BOTTOMRIGHT", UIParent, "BOTTOM", 1200, 10 },
 }
 
 -----------------------------
 -- Init
 -----------------------------
+
+--Somehow, if the minimap gets close to the screen bottom, the MultiBars will error trying to call SetScale with a negative value.
+MultiBarLeft.SetScale = function() end
+MultiBarRight.SetScale = function() end
 
 --MinimapCluster
 MinimapCluster:SetScale(cfg.scale)
@@ -103,6 +107,7 @@ TimeManagerClockButton:ClearAllPoints()
 TimeManagerClockButton:SetPoint("BOTTOM",0,5)
 TimeManagerClockTicker:SetFont(STANDARD_TEXT_FONT,12,"OUTLINE")
 TimeManagerClockTicker:SetTextColor(0.8,0.8,0.6,1)
+TimeManagerClockButton:SetAlpha(0.9)
 
 --GameTimeFrame
 GameTimeFrame:SetParent(Minimap)
@@ -128,10 +133,20 @@ local function Zoom(self, direction)
 end
 Minimap:SetScript("OnMouseWheel", Zoom)
 
+-- durability and vehicle
+local dummy = function() end
+VehicleSeatIndicator:ClearAllPoints()
+VehicleSeatIndicator:SetPoint("RIGHT", MinimapCluster, "LEFT")
+VehicleSeatIndicator.ClearAllPoints = dummy
+VehicleSeatIndicator.SetPoint = dummy
+DurabilityFrame:ClearAllPoints()
+DurabilityFrame:SetPoint("BOTTOM", MinimapCluster, "TOP")
+DurabilityFrame.ClearAllPoints = dummy
+DurabilityFrame.SetPoint = dummy
+
 --onenter/show
 local function Show()
   GameTimeFrame:SetAlpha(0.9)
-  TimeManagerClockButton:SetAlpha(0.9)
   MiniMapTracking:SetAlpha(0.9)
   MiniMapChallengeMode:SetAlpha(0.9)
   MiniMapInstanceDifficulty:SetAlpha(0.9)
@@ -145,7 +160,6 @@ local function Hide()
   if Minimap:IsMouseOver() then return end
   if time() == lasttime then return end
   GameTimeFrame:SetAlpha(0)
-  TimeManagerClockButton:SetAlpha(0)
   MiniMapTracking:SetAlpha(0)
   MiniMapChallengeMode:SetAlpha(0)
   MiniMapInstanceDifficulty:SetAlpha(0)

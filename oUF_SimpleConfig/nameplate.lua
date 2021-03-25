@@ -67,7 +67,6 @@ L.C.nameplate = {
     colorHealth = true,
     colorThreat = true,
     colorThreatInvers = true,
-    frequentUpdates = true,
     name = {
       enabled = true,
       points = {

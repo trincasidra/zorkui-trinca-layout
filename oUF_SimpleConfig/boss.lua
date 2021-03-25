@@ -23,7 +23,6 @@ L.C.boss = {
     colorReaction = true,
     colorClass = true,
     colorHealth = true,
-    frequentUpdates = true,
     name = {
       enabled = true,
       points = {

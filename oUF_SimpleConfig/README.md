@@ -82,7 +82,6 @@ Healthbar and absorbbar cannot be disabled. Size and position matches the unit f
 * **colorHealth**: type: BOOLEAN, Enables/disables coloring by health color.
 * **colorThreat**: type: BOOLEAN, Enables/disables coloring by threat color. Checks if the unit has aggro from any other unit.
 * **colorThreatInvers**: type: BOOLEAN, Enables/disables coloring by invers threat color. Checks if unit has aggro against "player".
-* **frequentUpdates**: type: BOOLEAN, Enables/disables frequent updates
 * **name**: type: TABLE, configuration for the name text
   * enabled: type:BOOLEAN, enable/disable element
   * points: type:TABLE, contains multiple points
